@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int a,b,c;
+    float d;
+    scanf("%d%d%d%f",&a,&b,&c,&d);
+    int e=a*a;
+    int r=b*c;
+    float k=3.14*d*d;
+    printf("%d\n%d\n%.2f",e,r,k);
+    return 0;
+}
