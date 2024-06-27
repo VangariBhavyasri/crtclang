@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+     int u;
+    scanf("%d",&u);
+    if(u<=200){
+        float c1=0.5;
+        int a=u*c1;
+        printf("Rs.%d",a);
+    }
+    else if(u<=400){
+        float c2=0.65;
+        int b=u*c2+100;
+        printf("Rs.%d",b);
+    }
+    else if(u<=600){
+        float c3=0.80;
+        int c=u*c3+200;
+        printf("Rs.%d",c);
+    }
+    else {
+        float c4=1.25;
+        int d=u*c4+425;
+        printf("Rs.%d",d);
+    } 
+    return 0;
+}
