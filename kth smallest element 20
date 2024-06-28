@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h> 
+    int compare(const void *a, const void *b) {
+    return (*(int *)a - *(int *)b);
+}
+
+int main()
+{
+    int numOfStocks,k;
+    scanf("%d%d",&numOfStocks,&k);
+    int stocks[numOfStocks];
+    for(int i=0;i<numOfStocks;i++)
+        scanf("%d",&stocks[i]);
+    qsort(stocks,numOfStocks,sizeof(int),compare);
+    printf("%d\n",stocks[k-1]);
+
+    return 0;
+}
