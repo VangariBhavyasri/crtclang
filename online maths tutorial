@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+      int numSize;
+    scanf("%d", &numSize);
+    
+    int arr[numSize];
+    for (int i = 0; i < numSize; i++) {
+        scanf("%d", &arr[i]);
+    }
+    
+    int sum = 0;
+    for (int i = 0; i < numSize; i++) {
+        sum += arr[i];
+        printf("%d ", sum);
+    }
+    
+    return 0;
+}
