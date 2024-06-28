@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,d,t,s=0, r;
+            scanf("%d", &n);
+            t=n;
+            r=log10(n)+1;
+            while(n>0) { 
+                d=n%10;
+                n=n/10;
+                if(r==3) {
+                s=s+d*d*d;
+                }
+                else if(r==4) 
+                    {
+                    s=s+d*d*d*d;
+                    }
+                }
+            if(s==t) 
+                printf("Yes");
+            else
+                printf("No");
+           return 0;
+           }
